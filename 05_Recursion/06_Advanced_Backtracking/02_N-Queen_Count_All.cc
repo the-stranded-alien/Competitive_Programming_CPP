@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-bool isSafe(int board[][10], int i, int j, int n) {
+bool isSafe(int board[][20], int i, int j, int n) {
     // Check For The Column
     for(int row = 0; row < i; row++) {
         if(board[row][j] == 1) return false;
@@ -26,7 +26,7 @@ bool isSafe(int board[][10], int i, int j, int n) {
     return true;
 }
 
-int solveNQueen(int board[][10], int i, int n) {
+int solveNQueen(int board[][20], int i, int n) {
     // Base Case
     if(i == n) return 1;
     // Recursive Case
@@ -44,7 +44,7 @@ int solveNQueen(int board[][10], int i, int n) {
 int main() {
     int N;
     cin >> N;
-    int board[10][10] = {0};
+    int board[20][20] = {0};
     cout << solveNQueen(board, 0, N) << endl;
     return 0;
 }
