@@ -41,11 +41,11 @@ int main() {
     cin >> R >> C;
     int rat_dp[105][105] = {0};
     int elephant_dp[105][105] = {0};
-    cout << "Rat Version Ways : " << ratPaths(R, C, rat_dp) << endl;
-    cout << "Grid : " << endl;
+    cout << "\nRat Version Ways : " << ratPaths(R, C, rat_dp) << endl;
+    cout << "\nGrid : " << endl;
     printGrid(R, C, rat_dp);
-    cout << "Elephant Version Ways : " << elephantPaths(R, C, elephant_dp) << endl;
-    cout << "Grid : " << endl;
+    cout << "\nElephant Version Ways : " << elephantPaths(R, C, elephant_dp) << endl;
+    cout << "\nGrid : " << endl;
     printGrid(R, C, elephant_dp);
     return 0;
 }
