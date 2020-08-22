@@ -65,6 +65,7 @@ public:
             else return true; // Loop Found
         }
         delete [] parent;
+        delete [] rank;
         return false;
     }
 };
